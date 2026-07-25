@@ -94,7 +94,19 @@ appears near the top of the list.
 
 ## API
 
-Start the metadata-aware artifact:
+The API requires the generated metadata-aware `hybrid_model.pt` artifact.
+Because that artifact is reproducible from the public code and source datasets,
+it is not required in Git. Build it before starting the service:
+
+```bash
+python scripts/evaluate_hybrid.py \
+  --data "/path/to/Video_Games.csv.gz" \
+  --metadata "/path/to/meta_Video_Games.jsonl" \
+  --model artifacts/bpr_model.pt \
+  --output artifacts/hybrid_model.pt
+```
+
+Then start the API:
 
 ```bash
 MODEL_PATH=artifacts/hybrid_model.pt \
@@ -116,7 +128,8 @@ when available—not just opaque item IDs.
 
 **[Open the free public demo →](https://kojunghsu.github.io/amazon-video-games-hybrid-recommender/)**
 
-Start the API and open [http://localhost:8000](http://localhost:8000):
+For the full local API-backed experience, first generate
+`artifacts/hybrid_model.pt` as shown above, then run:
 
 ```bash
 MODEL_PATH=artifacts/hybrid_model.pt \
