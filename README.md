@@ -114,6 +114,8 @@ when available—not just opaque item IDs.
 
 ### Interactive Demo
 
+**[Open the free public demo →](https://kojunghsu.github.io/amazon-video-games-hybrid-recommender/)**
+
 Start the API and open [http://localhost:8000](http://localhost:8000):
 
 ```bash
@@ -124,6 +126,11 @@ MODEL_PATH=artifacts/hybrid_model.pt \
 The responsive browser demo supports known-user recommendations, popularity
 cold start, and metadata-based similar items. It displays the measured ranking
 metrics alongside product cards and requires no separate frontend build.
+
+The GitHub Pages version uses cached recommendations generated from real
+positive interactions and product metadata, so recruiters can explore it
+instantly without downloading the full model. Rebuild its data with
+`scripts/build_static_demo.py`.
 
 ## Reproduce
 
