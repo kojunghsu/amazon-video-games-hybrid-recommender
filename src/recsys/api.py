@@ -3,7 +3,9 @@ from __future__ import annotations
 import os
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import HTMLResponse
 
+from .demo import DEMO_HTML
 from .service import RecommendationService
 
 
@@ -13,6 +15,11 @@ app = FastAPI(
     description="Hybrid Top-K recommendations with metadata-aware discovery.",
 )
 service = RecommendationService(os.getenv("MODEL_PATH", "artifacts/bpr_model.pt"))
+
+
+@app.get("/", response_class=HTMLResponse, include_in_schema=False)
+def demo() -> str:
+    return DEMO_HTML
 
 
 @app.get("/health")
