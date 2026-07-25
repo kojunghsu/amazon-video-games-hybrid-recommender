@@ -30,9 +30,10 @@ class HybridRecommender:
             if not seen:
                 profile = sparse.csr_matrix((1, self.item_features.shape[1]))
             else:
-                profile = normalize(
-                    self.item_features[seen].mean(axis=0), norm="l2"
+                mean_features = np.asarray(
+                    self.item_features[seen].mean(axis=0)
                 )
+                profile = normalize(mean_features, norm="l2")
                 profile = sparse.csr_matrix(profile)
             self._profiles[user_index] = profile
         return self._profiles[user_index]
