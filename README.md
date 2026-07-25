@@ -112,6 +112,19 @@ GET /similar/{parent_asin}?k=10
 Responses include product title, store, category, rating, price, and image URL
 when available—not just opaque item IDs.
 
+### Interactive Demo
+
+Start the API and open [http://localhost:8000](http://localhost:8000):
+
+```bash
+MODEL_PATH=artifacts/hybrid_model.pt \
+  uvicorn recsys.api:app --host 0.0.0.0 --port 8000
+```
+
+The responsive browser demo supports known-user recommendations, popularity
+cold start, and metadata-based similar items. It displays the measured ranking
+metrics alongside product cards and requires no separate frontend build.
+
 ## Reproduce
 
 ```bash
