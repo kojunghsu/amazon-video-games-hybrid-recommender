@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive portfolio demo of a hybrid Amazon Video Games recommender.">
+  <title>GameMatch — Hybrid Recommender</title>
+  <style>
+    :root { color-scheme: dark; --ink:#f7f8fc; --muted:#a8afbf; --panel:rgba(21,25,38,.84); --line:rgba(255,255,255,.09); --purple:#7c5cff; --mint:#25d0ab; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; color:var(--ink); background:radial-gradient(circle at 8% 0%,rgba(124,92,255,.27),transparent 34rem),radial-gradient(circle at 92% 18%,rgba(37,208,171,.16),transparent 28rem),#090b12; font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    button,a { font:inherit; }
+    .shell { width:min(1180px,calc(100% - 32px)); margin:auto; padding:34px 0 60px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:850; letter-spacing:-.02em; }
+    .logo { width:38px; height:38px; display:grid; place-items:center; border-radius:12px; background:linear-gradient(135deg,var(--purple),#ae79ff); box-shadow:0 10px 35px rgba(124,92,255,.35); }
+    .github { color:#dce0ea; text-decoration:none; border:1px solid var(--line); border-radius:11px; padding:8px 12px; background:rgba(255,255,255,.035); }
+    .hero { padding:76px 0 42px; max-width:880px; }
+    .eyebrow { color:#b9aaff; font-size:12px; font-weight:750; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { margin:12px 0 18px; font-size:clamp(42px,7vw,78px); line-height:.98; letter-spacing:-.055em; }
+    .hero p { max-width:720px; margin:0; color:var(--muted); font-size:18px; }
+    .metrics { display:flex; flex-wrap:wrap; gap:10px; margin-top:27px; }
+    .metric { padding:9px 12px; border:1px solid var(--line); border-radius:999px; color:#d9ddea; background:rgba(255,255,255,.035); }
+    .metric strong { color:white; }
+    .demo { overflow:hidden; border:1px solid var(--line); border-radius:24px; background:var(--panel); backdrop-filter:blur(20px); box-shadow:0 30px 90px rgba(0,0,0,.35); }
+    .toolbar { padding:18px 20px; display:flex; gap:9px; flex-wrap:wrap; border-bottom:1px solid var(--line); }
+    .segment { cursor:pointer; border:0; border-radius:10px; padding:9px 13px; color:var(--muted); background:rgba(255,255,255,.045); }
+    .segment.active { color:#fff; background:#403665; box-shadow:inset 0 0 0 1px rgba(185,170,255,.25); }
+    .context { display:flex; justify-content:space-between; gap:15px; padding:15px 20px; color:var(--muted); }
+    .badge { color:#aef1df; font:12px ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; padding:0 20px 22px; }
+    .card { min-width:0; overflow:hidden; border:1px solid var(--line); border-radius:16px; background:rgba(255,255,255,.035); }
+    .art { aspect-ratio:16/10; display:grid; place-items:center; overflow:hidden; color:#6e758a; font-size:34px; background:linear-gradient(135deg,#24273a,#11131d); }
+    .art img { width:100%; height:100%; object-fit:contain; background:#fff; }
+    .copy { padding:14px; }
+    .rank { color:#aa9aff; font-size:12px; font-weight:850; }
+    h2 { margin:6px 0 5px; font-size:15px; line-height:1.25; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .detail { color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .note { margin-top:18px; padding:15px 18px; border:1px solid var(--line); border-radius:14px; color:var(--muted); background:rgba(255,255,255,.025); }
+    .note strong { color:#e7e9f1; }
+    footer { padding-top:22px; text-align:center; color:#747b8d; font-size:12px; }
+    @media (max-width:680px) { .shell{width:min(100% - 20px,1180px);padding-top:18px}.hero{padding:52px 3px 32px}.context{flex-direction:column}.grid{grid-template-columns:1fr 1fr;padding:0 10px 14px;gap:9px}.copy{padding:11px}.toolbar{padding:12px 10px} }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="brand"><span class="logo">G</span>GameMatch</div>
+      <a class="github" href="https://github.com/kojunghsu/amazon-video-games-hybrid-recommender">View source ↗</a>
+    </header>
+    <section class="hero">
+      <div class="eyebrow">Hybrid recommender · Interactive case study</div>
+      <h1>Find the next game worth playing.</h1>
+      <p>A leakage-safe Top-K recommendation system combining BPR collaborative ranking with metadata content signals and explicit cold-start behavior.</p>
+      <div class="metrics">
+        <span class="metric"><strong>0.6428</strong> Hit Rate@10</span>
+        <span class="metric"><strong>0.4288</strong> NDCG@10</span>
+        <span class="metric"><strong>79.99%</strong> Coverage@20</span>
+        <span class="metric"><strong>10k</strong> Test users</span>
+      </div>
+    </section>
+    <main class="demo">
+      <nav class="toolbar" aria-label="Cached recommendation segment">
+        <button class="segment active" data-segment="popular">Popular cold start</button>
+        <button class="segment" data-segment="nintendo">Nintendo & Switch</button>
+        <button class="segment" data-segment="console">PlayStation & Xbox</button>
+        <button class="segment" data-segment="accessories">Gaming accessories</button>
+      </nav>
+      <div class="context">
+        <span id="summary">Top products for a brand-new user with no history.</span>
+        <span class="badge">cached_recommendations</span>
+      </div>
+      <section id="grid" class="grid" aria-live="polite"></section>
+    </main>
+    <aside class="note"><strong>Why cached?</strong> The public demo is a fast, free showcase using real Amazon interactions and metadata. The repository contains the full BPR + TF-IDF inference API, temporal evaluation, Docker setup, tests, and reproducible Colab workflow.</aside>
+    <footer>Amazon Reviews 2023 · Positive-interaction ranking · No raw user data exposed</footer>
+  </div>
+  <script>
+    const labels = {
+      popular: "Top products for a brand-new user with no history.",
+      nintendo: "Popular products matching Nintendo, Switch, Mario, Zelda, or Pokémon.",
+      console: "Popular products matching PlayStation or Xbox.",
+      accessories: "Popular controllers, headsets, keyboards, mice, and adapters."
+    };
+    const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char]));
+    const safeImage = value => { try { const url=new URL(value); return ["https:","http:"].includes(url.protocol)?url.href:null; } catch { return null; } };
+    let demoData;
+    function render(segment) {
+      const rows=demoData.recommendations[segment] || [];
+      document.querySelector("#summary").textContent=labels[segment];
+      document.querySelector("#grid").innerHTML=rows.map((item,index)=>{
+        const image=safeImage(item.image_url);
+        const detail=[item.store||item.category,item.average_rating?`★ ${item.average_rating}`:null,item.positive_interactions?`${item.positive_interactions.toLocaleString()} positive signals`:null].filter(Boolean).join(" · ");
+        return `<article class="card"><div class="art">${image?`<img src="${image}" alt="">`:"🎮"}</div><div class="copy"><div class="rank">#${index+1}</div><h2 title="${escapeHtml(item.title||item.item_id)}">${escapeHtml(item.title||item.item_id)}</h2><div class="detail">${escapeHtml(detail)}</div></div></article>`;
+      }).join("");
+    }
+    document.querySelectorAll(".segment").forEach(button=>button.addEventListener("click",()=>{
+      document.querySelectorAll(".segment").forEach(item=>item.classList.toggle("active",item===button));
+      render(button.dataset.segment);
+    }));
+    fetch("./data.json").then(response=>response.json()).then(data=>{ demoData=data; render("popular"); }).catch(()=>{ document.querySelector("#grid").innerHTML="<p>Demo data could not be loaded.</p>"; });
+  </script>
+</body>
+</html>

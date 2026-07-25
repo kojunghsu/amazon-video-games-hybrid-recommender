@@ -1,0 +1,366 @@
+{
+  "generated_from": "Amazon Reviews 2023 \u2014 Video Games",
+  "ranking": "positive-interaction popularity within segment",
+  "recommendations": {
+    "popular": [
+      {
+        "item_id": "B01N3ASPNV",
+        "title": "amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)",
+        "store": "amFilm",
+        "category": "All Electronics",
+        "price": 8.91,
+        "average_rating": 4.8,
+        "rating_number": 110368,
+        "image_url": "https://m.media-amazon.com/images/I/41Xn+iqXczL._AC_.jpg",
+        "positive_interactions": 2733
+      },
+      {
+        "item_id": "B0086VPUHI",
+        "title": "Grand Theft Auto V: Premium Edition - Xbox One [Digital Code]",
+        "store": "Rockstar Games",
+        "category": "Video Games",
+        "price": 15.0,
+        "average_rating": 4.6,
+        "rating_number": 858,
+        "image_url": "https://m.media-amazon.com/images/I/51cgakMTm-S.jpg",
+        "positive_interactions": 2057
+      },
+      {
+        "item_id": "B07YBXFDYN",
+        "title": "Skyrim VR - PlayStation 4",
+        "store": "Bethesda",
+        "category": "Video Games",
+        "price": 39.89,
+        "average_rating": 4.6,
+        "rating_number": 933,
+        "image_url": "https://m.media-amazon.com/images/I/51lPOL5imyL.jpg",
+        "positive_interactions": 1997
+      },
+      {
+        "item_id": "B000N5Z2L4",
+        "title": "Xbox Live Gold: 1 Month Membership [Digital Code]",
+        "store": "Xbox",
+        "category": "Video Games",
+        "price": 9.99,
+        "average_rating": 4.7,
+        "rating_number": 91135,
+        "image_url": "https://m.media-amazon.com/images/I/41NBD6ZTy5L.jpg",
+        "positive_interactions": 1684
+      },
+      {
+        "item_id": "B004RMK5QG",
+        "title": "PlayStation Plus: 12 Month Membership [Digital Code]",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 4.8,
+        "rating_number": 53119,
+        "image_url": "https://m.media-amazon.com/images/I/3139Zf7TRXL.jpg",
+        "positive_interactions": 1668
+      },
+      {
+        "item_id": "B00BGA9WK2",
+        "title": "PlayStation 4 500GB Console [Old Model][Discontinued]",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": 195.98,
+        "average_rating": 4.6,
+        "rating_number": 13698,
+        "image_url": "https://m.media-amazon.com/images/I/315zvYgE+tL.jpg",
+        "positive_interactions": 1651
+      },
+      {
+        "item_id": "B077GG9D5D",
+        "title": "DualShock 4 Wireless Controller for PlayStation 4 - Jet Black",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": 57.0,
+        "average_rating": 4.7,
+        "rating_number": 124073,
+        "image_url": "https://m.media-amazon.com/images/I/41mCozLA9CL.jpg",
+        "positive_interactions": 1614
+      },
+      {
+        "item_id": "B087NNPYP3",
+        "title": "The Legend of Zelda: Breath of the Wild Master Edition - Nintendo Switch",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 3.7,
+        "rating_number": 124,
+        "image_url": "https://m.media-amazon.com/images/I/51GPhTNLvEL.jpg",
+        "positive_interactions": 1408
+      }
+    ],
+    "nintendo": [
+      {
+        "item_id": "B01N3ASPNV",
+        "title": "amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)",
+        "store": "amFilm",
+        "category": "All Electronics",
+        "price": 8.91,
+        "average_rating": 4.8,
+        "rating_number": 110368,
+        "image_url": "https://m.media-amazon.com/images/I/41Xn+iqXczL._AC_.jpg",
+        "positive_interactions": 2733
+      },
+      {
+        "item_id": "B087NNPYP3",
+        "title": "The Legend of Zelda: Breath of the Wild Master Edition - Nintendo Switch",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 3.7,
+        "rating_number": 124,
+        "image_url": "https://m.media-amazon.com/images/I/51GPhTNLvEL.jpg",
+        "positive_interactions": 1408
+      },
+      {
+        "item_id": "B07624RBWB",
+        "title": "Nintendo Switch Pro Controller",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": 69.0,
+        "average_rating": 4.8,
+        "rating_number": 69193,
+        "image_url": "https://m.media-amazon.com/images/I/41lo7JOm0UL.jpg",
+        "positive_interactions": 1293
+      },
+      {
+        "item_id": "B087NN2K41",
+        "title": "Mario Kart 8 Deluxe \u2013 Booster Course Pass - Nintendo Switch [Digital Code]",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": 24.88,
+        "average_rating": 4.8,
+        "rating_number": 1028,
+        "image_url": "https://m.media-amazon.com/images/I/51yDGvODqXL.jpg",
+        "positive_interactions": 948
+      },
+      {
+        "item_id": "B0C3KYVDWT",
+        "title": "SanDisk 128GB microSDXC-Card, Licensed for Nintendo-Switch - SDSQXAO-128G-GNCZN",
+        "store": "SanDisk",
+        "category": "Computers",
+        "price": 14.99,
+        "average_rating": 4.9,
+        "rating_number": 278574,
+        "image_url": "https://m.media-amazon.com/images/I/41Nd+sf+YYL._AC_.jpg",
+        "positive_interactions": 936
+      },
+      {
+        "item_id": "B07DPK5NPD",
+        "title": "Super Smash Bros. - Nintendo Wii U",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": 39.85,
+        "average_rating": 4.6,
+        "rating_number": 3312,
+        "image_url": "https://m.media-amazon.com/images/I/61EF4uE1blL.jpg",
+        "positive_interactions": 936
+      },
+      {
+        "item_id": "B087SHFL9B",
+        "title": "Super Mario Odyssey - Nintendo Switch",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": 53.98,
+        "average_rating": 4.8,
+        "rating_number": 31872,
+        "image_url": "https://m.media-amazon.com/images/I/61z-eOR5iML.jpg",
+        "positive_interactions": 930
+      },
+      {
+        "item_id": "B08D3XL1KF",
+        "title": "Super Smash Bros.\u00a0Ultimate:\u00a0Challenger Pack\u00a02 - [Switch Digital Code]",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": 5.99,
+        "average_rating": 4.4,
+        "rating_number": 88,
+        "image_url": "https://m.media-amazon.com/images/I/51uEbIqA1dL.jpg",
+        "positive_interactions": 835
+      }
+    ],
+    "console": [
+      {
+        "item_id": "B0086VPUHI",
+        "title": "Grand Theft Auto V: Premium Edition - Xbox One [Digital Code]",
+        "store": "Rockstar Games",
+        "category": "Video Games",
+        "price": 15.0,
+        "average_rating": 4.6,
+        "rating_number": 858,
+        "image_url": "https://m.media-amazon.com/images/I/51cgakMTm-S.jpg",
+        "positive_interactions": 2057
+      },
+      {
+        "item_id": "B07YBXFDYN",
+        "title": "Skyrim VR - PlayStation 4",
+        "store": "Bethesda",
+        "category": "Video Games",
+        "price": 39.89,
+        "average_rating": 4.6,
+        "rating_number": 933,
+        "image_url": "https://m.media-amazon.com/images/I/51lPOL5imyL.jpg",
+        "positive_interactions": 1997
+      },
+      {
+        "item_id": "B000N5Z2L4",
+        "title": "Xbox Live Gold: 1 Month Membership [Digital Code]",
+        "store": "Xbox",
+        "category": "Video Games",
+        "price": 9.99,
+        "average_rating": 4.7,
+        "rating_number": 91135,
+        "image_url": "https://m.media-amazon.com/images/I/41NBD6ZTy5L.jpg",
+        "positive_interactions": 1684
+      },
+      {
+        "item_id": "B004RMK5QG",
+        "title": "PlayStation Plus: 12 Month Membership [Digital Code]",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 4.8,
+        "rating_number": 53119,
+        "image_url": "https://m.media-amazon.com/images/I/3139Zf7TRXL.jpg",
+        "positive_interactions": 1668
+      },
+      {
+        "item_id": "B00BGA9WK2",
+        "title": "PlayStation 4 500GB Console [Old Model][Discontinued]",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": 195.98,
+        "average_rating": 4.6,
+        "rating_number": 13698,
+        "image_url": "https://m.media-amazon.com/images/I/315zvYgE+tL.jpg",
+        "positive_interactions": 1651
+      },
+      {
+        "item_id": "B077GG9D5D",
+        "title": "DualShock 4 Wireless Controller for PlayStation 4 - Jet Black",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": 57.0,
+        "average_rating": 4.7,
+        "rating_number": 124073,
+        "image_url": "https://m.media-amazon.com/images/I/41mCozLA9CL.jpg",
+        "positive_interactions": 1614
+      },
+      {
+        "item_id": "B07YBWT3PK",
+        "title": "Fallout 4 - Xbox One",
+        "store": "Bethesda",
+        "category": "Video Games",
+        "price": 8.16,
+        "average_rating": 4.6,
+        "rating_number": 3296,
+        "image_url": "https://m.media-amazon.com/images/I/51B8ONLLWbL.jpg",
+        "positive_interactions": 1389
+      },
+      {
+        "item_id": "B00KIWEMIG",
+        "title": "Far Cry 4 - PS3 [Digital Code]",
+        "store": "Ubisoft",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 4.5,
+        "rating_number": 1113,
+        "image_url": "https://m.media-amazon.com/images/I/61EJi9LmAbL.jpg",
+        "positive_interactions": 1040
+      }
+    ],
+    "accessories": [
+      {
+        "item_id": "B077GG9D5D",
+        "title": "DualShock 4 Wireless Controller for PlayStation 4 - Jet Black",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": 57.0,
+        "average_rating": 4.7,
+        "rating_number": 124073,
+        "image_url": "https://m.media-amazon.com/images/I/41mCozLA9CL.jpg",
+        "positive_interactions": 1614
+      },
+      {
+        "item_id": "B07624RBWB",
+        "title": "Nintendo Switch Pro Controller",
+        "store": "Nintendo",
+        "category": "Video Games",
+        "price": 69.0,
+        "average_rating": 4.8,
+        "rating_number": 69193,
+        "image_url": "https://m.media-amazon.com/images/I/41lo7JOm0UL.jpg",
+        "positive_interactions": 1293
+      },
+      {
+        "item_id": "B019WRM1IA",
+        "title": "Microsoft Xbox 360 Wired Controller for Windows & Xbox 360 Console",
+        "store": "Microsoft",
+        "category": "All Electronics",
+        "price": 67.83,
+        "average_rating": 4.4,
+        "rating_number": 9726,
+        "image_url": "https://m.media-amazon.com/images/I/418h3hauXWL._AC_.jpg",
+        "positive_interactions": 1018
+      },
+      {
+        "item_id": "B00BGA9X9W",
+        "title": "DualShock 4 Wireless Controller for PlayStation 4 - Jet Black [Old Model]",
+        "store": "PlayStation",
+        "category": "Video Games",
+        "price": 61.95,
+        "average_rating": 4.6,
+        "rating_number": 6537,
+        "image_url": "https://m.media-amazon.com/images/I/41ih-c4lfVL.jpg",
+        "positive_interactions": 965
+      },
+      {
+        "item_id": "B07K3KHFSY",
+        "title": "Nyko Charge Base - 2 Port Controller Charger with 2 USB Charge Adapters for PlayStation 3",
+        "store": "Nyko",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 4.2,
+        "rating_number": 315,
+        "image_url": "https://m.media-amazon.com/images/I/41IG1-GA3dL.jpg",
+        "positive_interactions": 821
+      },
+      {
+        "item_id": "B0015AARJI",
+        "title": "PlayStation 3 Dualshock 3 Wireless Controller (Black)",
+        "store": "Sony",
+        "category": "Video Games",
+        "price": 49.99,
+        "average_rating": 4.4,
+        "rating_number": 7535,
+        "image_url": "https://m.media-amazon.com/images/I/41bhVbUXX9L.jpg",
+        "positive_interactions": 798
+      },
+      {
+        "item_id": "B0BDWVBWC9",
+        "title": "PowerA Charging Stand for PlayStation 4",
+        "store": "PowerA",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 4.6,
+        "rating_number": 45295,
+        "image_url": "https://m.media-amazon.com/images/I/41vZP81vi6L.jpg",
+        "positive_interactions": 741
+      },
+      {
+        "item_id": "B00HVBPRUO",
+        "title": "Gold Wireless Stereo Headset - PlayStation 4",
+        "store": "Sony",
+        "category": "Video Games",
+        "price": null,
+        "average_rating": 4.5,
+        "rating_number": 7070,
+        "image_url": "https://m.media-amazon.com/images/I/51c7xwQ9vsL.jpg",
+        "positive_interactions": 668
+      }
+    ]
+  }
+}
