@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amazon-video-games-recommender"
+version = "3.0.0"
+description = "Hybrid temporal Top-K recommendation system for Amazon Video Games"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy==2.0.2",
+  "pandas==2.2.3",
+  "scipy==1.14.1",
+  "scikit-learn==1.6.0",
+  "torch==2.5.1",
+  "fastapi==0.115.6",
+  "uvicorn==0.34.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

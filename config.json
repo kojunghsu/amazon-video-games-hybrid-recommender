@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "positive_rating_threshold": 4.0,
+  "minimum_positive_interactions": 3,
+  "embedding_dim": 64,
+  "batch_size": 4096,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.000001,
+  "negatives_per_positive": 4,
+  "evaluation_negatives": 100,
+  "maximum_evaluation_users": 10000,
+  "evaluation_batch_size": 65536,
+  "top_k": [5, 10, 20],
+  "early_stopping_patience": 3
+}
