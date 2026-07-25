@@ -45,7 +45,7 @@ This repository implements a distinct strategy for each case:
 Raw data is intentionally excluded from Git. The project expects Amazon Reviews
 2023 interaction data and `meta_Video_Games.jsonl`, joined by `parent_asin`.
 
-## Measured Collaborative Baseline
+## Measured Ranking Results
 
 Metrics use 10,000 eligible test users. Each held-out future positive is ranked
 against 100 unseen negative candidates.
@@ -53,13 +53,15 @@ against 100 unseen negative candidates.
 | Model | Hit Rate@10 | NDCG@10 | MRR | Coverage@20 |
 |---|---:|---:|---:|---:|
 | Popularity | 0.5037 | 0.3088 | 0.2670 | 0.2846 |
-| **BPR-MF** | **0.6364** | **0.4267** | **0.3760** | **0.7951** |
-| Relative lift | **+26.3%** | **+38.2%** | **+40.8%** | **+179.4%** |
+| BPR-MF | 0.6364 | 0.4267 | 0.3760 | 0.7951 |
+| **Hybrid (60% BPR + 40% content)** | **0.6428** | **0.4288** | **0.3763** | **0.7999** |
+| Hybrid lift over BPR | **+1.0%** | **+0.5%** | **+0.1%** | **+0.6%** |
 
-The BPR result is already measured on the full interaction dataset. Hybrid
-weights are selected on the validation set; the test set is evaluated once
-after selection. This separation prevents reporting a hand-picked test result.
-Generated hybrid metrics are written to `artifacts/hybrid_metrics.json`.
+Hybrid weights were searched over `0.6, 0.7, 0.8, 0.9` on 10,000 validation
+users. Alpha `0.6` produced the highest validation `NDCG@10` and was then
+evaluated once on 10,000 test users. This separation prevents reporting a
+hand-picked test result. The complete alpha search and final metrics are
+checked into `artifacts/hybrid_metrics.json`.
 
 ## System Design
 
@@ -178,4 +180,3 @@ pytest
 - Price is missing for roughly one-third of matched catalog items.
 - TF-IDF understands shared words, not deeper semantic equivalence; a sentence
   embedding retrieval experiment is the next justified model comparison.
-

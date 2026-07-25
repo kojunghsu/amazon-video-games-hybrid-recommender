@@ -3,7 +3,9 @@
 .venv/
 __pycache__/
 .pytest_cache/
-artifacts/
+artifacts/*
+!artifacts/metrics.json
+!artifacts/hybrid_metrics.json
 data/raw/
 Video_Games.csv.gz
 meta_Video_Games.jsonl
