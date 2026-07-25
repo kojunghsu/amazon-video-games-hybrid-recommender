@@ -1,0 +1,12 @@
+{
+  "interaction_catalog_items": 25612,
+  "metadata_records": 137269,
+  "matched_catalog_items": 25612,
+  "metadata_coverage": 1.0,
+  "matched_items_with_usable_text": 25612,
+  "usable_text_coverage": 1.0,
+  "matched_items_with_price": 17135,
+  "price_coverage": 0.6690,
+  "join_key": "parent_asin",
+  "verified_source": "Amazon Reviews 2023 Video Games"
+}
